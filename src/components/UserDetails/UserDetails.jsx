@@ -13,9 +13,7 @@ const UserDetails = () => {
                 <p className='text-lg my-3'>Portfolio: {website}</p>
                 <p className='text-lg my-3'>Address: {address.city}</p>
                 <Link to={'/users'}>
-                    <div className='text-2xl font-bold text-blue-600'>
-                        Back to Users
-                    </div>
+                <button className='btn  btn-soft btn-secondary'>Back</button>
                 </Link>
             </div>
         </>

@@ -11,7 +11,9 @@ const User = ({ user }) => {
                 <h4 className='text-xl font-semibold'>{email}</h4>
                 <p className='text-lg my-3'>{phone}</p>
             </div>
-            <NavLink to={`/users/${id}`}>Details</NavLink>
+            <NavLink to={`/users/${id}`}>
+            <button className='btn  btn-soft btn-primary'>Details</button>
+            </NavLink>
         </div>
     );
 };
