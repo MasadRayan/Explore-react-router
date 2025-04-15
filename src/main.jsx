@@ -42,6 +42,10 @@ const router = createBrowserRouter([
         Component: PostDetails,
       }
     ]
+  },
+  {
+    path: '*',
+    element: <span className='text-7xl font-bold'>Not Found: 404 status</span>
   }
 ])
 

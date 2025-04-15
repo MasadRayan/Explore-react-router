@@ -1,9 +1,13 @@
 import React from 'react';
-import { Link, useLoaderData } from 'react-router';
+import { Link, useLoaderData, useParams } from 'react-router';
 
 const UserDetails = () => {
     const user = useLoaderData();
     const { id, name, email, phone, website, address } = user;
+
+    const {userID} = useParams();
+
+    
     return (
         <>
             <div className='bg-gradient-to-b from-blue-400 to-pink-400 border border-blue-700 text-center rounded-2xl py-5 '>
